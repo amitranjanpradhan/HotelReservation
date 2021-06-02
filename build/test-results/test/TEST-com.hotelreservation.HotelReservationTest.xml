@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hotelreservation.HotelReservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-02T04:48:51" hostname="LAPTOP-F926MLOJ" time="0.181">
+  <properties/>
+  <testcase name="givenHotel_whenInvokeAddHotel_shoulBeAbleToAdd()" classname="com.hotelreservation.HotelReservationTest" time="0.181"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
