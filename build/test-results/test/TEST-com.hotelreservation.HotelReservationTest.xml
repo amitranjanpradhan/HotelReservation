@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.hotelreservation.HotelReservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-02T04:48:51" hostname="LAPTOP-F926MLOJ" time="0.181">
+<testsuite name="com.hotelreservation.HotelReservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-02T06:00:56" hostname="LAPTOP-F926MLOJ" time="0.061">
   <properties/>
-  <testcase name="givenHotel_whenInvokeAddHotel_shoulBeAbleToAdd()" classname="com.hotelreservation.HotelReservationTest" time="0.181"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="shouldBeAbleToReturnCheapestHotel()" classname="com.hotelreservation.HotelReservationTest" time="0.061"/>
+  <system-out><![CDATA[Hotel name:LakewoodTotal rate: 110
+Hotel name:LakewoodTotal rate: 110
+Hotel name:BridgewoodTotal rate: 160
+Hotel name:LakewoodTotal rate: 110
+Hotel name:BridgewoodTotal rate: 160
+Hotel name:RidgewoodTotal rate: 220
+Hotel: Lakewood  Rate: 110
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
