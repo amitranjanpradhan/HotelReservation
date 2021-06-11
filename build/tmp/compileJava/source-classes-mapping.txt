@@ -1,6 +1,6 @@
-com/hotelreservation/Hotel.java
- com.hotelreservation.Hotel
 com/hotelreservation/InvalidDateError.java
  com.hotelreservation.InvalidDateError
+com/hotelreservation/Hotel.java
+ com.hotelreservation.Hotel
 com/hotelreservation/HotelReservationServices.java
  com.hotelreservation.HotelReservationServices
