@@ -3,6 +3,7 @@ package com.hotelreservation;
 public class Hotel {
     public String hotelName;
     public int dailyRate, weekDayRate, weekEndRate;
+    private int totalRate;
 
     /**
      * this one is a parameterised constructor which will initiate the value.
@@ -65,7 +66,28 @@ public class Hotel {
     public int getRate() {
         return dailyRate;
     }
-
+    /**
+     * In this setter method i have taken the parameters below and added totalRate which will add both weekdayRate and weekEndRate.
+     * @param weekDayCount
+     * @param weekEndsCount
+     */
+    public void setRate(int weekDayCount,int weekEndsCount){
+        this.weekDayRate = this.weekDayRate*weekDayCount;
+        this.weekEndRate = this.weekEndRate*weekEndsCount;
+        this.totalRate = this.weekDayRate + this.weekEndRate;
+    }
+    /**
+     * @return weekDaysRate+weekEndsRate
+     */
+    public int getWeeklyRate() {
+        return this.weekDayRate + this.weekEndRate;
+    }
+    /**
+     * @return totalrate
+     */
+    public int getTotalRate() {
+        return this.totalRate;
+    }
     /**
      * here i have added welcome message.
      *

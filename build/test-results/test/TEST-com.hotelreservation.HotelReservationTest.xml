@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="com.hotelreservation.HotelReservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-11T06:55:30" hostname="LAPTOP-F926MLOJ" time="0.137">
   <properties/>
   <testcase name="shouldBeAbleToReturnCheapestHotel()" classname="com.hotelreservation.HotelReservationTest" time="0.137"/>
   <system-out><![CDATA[]]></system-out>
+=======
+<testsuite name="com.hotelreservation.HotelReservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-11T07:47:50" hostname="LAPTOP-F926MLOJ" time="0.063">
+  <properties/>
+  <testcase name="givenHotelWillCheck_CheapestRate_from_TotalRate()" classname="com.hotelreservation.HotelReservationTest" time="0.063"/>
+  <system-out><![CDATA[Saturday count==1
+Sunday count==1
+Hotel: LakewoodWeekday Rate: 440 & WeekEnd Rate: 180
+]]></system-out>
+>>>>>>> UC4_The_Cheapest_Hotel_For_Given_DateRange
   <system-err><![CDATA[]]></system-err>
 </testsuite>
