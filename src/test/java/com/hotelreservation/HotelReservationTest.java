@@ -7,7 +7,7 @@ import java.util.List;
 
 public class HotelReservationTest {
     @Test
-    public void givenHotel_whenInvokeAddHotel_shoulBeAbleToAdd() {
+    public void givenHotel_whenInvokeAddHotel_shouldBeAbleToAdd() {
         HotelReservationServices hotelReservationService = new HotelReservationServices();
         Hotel hotel = new Hotel("Lakewood",110);
         hotelReservationService.addHotel(hotel);
@@ -26,7 +26,7 @@ public class HotelReservationTest {
         hotelReservationService1.addHotel(Lakewood);
         hotelReservationService1.addHotel(Bridgewood);
         hotelReservationService1.addHotel(RidgeWood);
-        int Days = hotelReservationService1.NoOfDays("2021-05-21","2021-05-26");
+        int Days = hotelReservationService1.NoOfDays("2020-09-10","2020-09-11");
         Hotel result = hotelReservationService1.findCheapestHotel(Days);
         Assertions.assertEquals(Lakewood,result);
     }
@@ -34,11 +34,17 @@ public class HotelReservationTest {
      * This test case will check whether weekday rate and weekend rate added or not.
      */
     @Test
-    public void givenHotel_with3Parameters_shoulBeAbleToAdd_WeekdayAndWeekEndRate() {
+    public void givenHotel_with3Parameters_shouldBeAbleToAdd_WeekdayAndWeekEndRate() {
         HotelReservationServices hotelReservationService = new HotelReservationServices();
-        Hotel hotel = new Hotel("Lakewood", 110, 90);
-        hotelReservationService.addHotel(hotel);
+        Hotel Lakewood = new Hotel("Lakewood", 110, 90);
+        Hotel Bridgewood = new Hotel("Bridgewood", 150, 50);
+        Hotel Ridgewood = new Hotel("Ridgewood", 220, 150);
+        hotelReservationService.addHotel(Lakewood);
+        hotelReservationService.addHotel(Bridgewood);
+        hotelReservationService.addHotel(Ridgewood);
         List hotelList = hotelReservationService.getHotels();
-        Assertions.assertTrue(hotelList.contains(hotel));
+        Assertions.assertTrue(hotelList.contains(Lakewood));
+        Assertions.assertTrue(hotelList.contains(Bridgewood));
+        Assertions.assertTrue(hotelList.contains(Ridgewood));
     }
 }
